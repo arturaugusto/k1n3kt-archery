@@ -1,4 +1,4 @@
-# k1n3kt-archery
+# K1n3kt Archery
 
 ![demo](short_demo.gif "Short Demo")
 
@@ -8,7 +8,7 @@ The game is an archery simulator, following the theme "13th century".
 
 This year I was venturesome and built a game that uses computer vision techniques, which the player controls through the camera.
 
-The game works by detecting the angle to the main straight line in the image, using the Hough transform that I implemented from scratch in JavaScript.
+The game works by detecting the angle to the main straight line in the image, using the [Hough Transform](https://en.wikipedia.org/wiki/Hough_transform) that I implemented from scratch in JavaScript.
 
 The biggest challenge is dealing with image noise and lighting. I hope players have patience!
 
