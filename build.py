@@ -1,4 +1,4 @@
-from zipfile import ZipFile, ZIP_LZMA
+from zipfile import ZipFile, ZIP_LZMA, ZIP_BZIP2
 
 assets = ''
 
@@ -31,7 +31,7 @@ with open('index.html', 'r') as index:
 	with open('index.min.html', 'w+', encoding="utf-8") as f:
 		read_data = f.write(out)
 
-	with ZipFile('game.zip', 'w', compression=ZIP_LZMA) as myzip:
+	with ZipFile('game.zip', 'w', compression=ZIP_BZIP2) as myzip:
 		myzip.writestr('/index.html', out)
 
 

@@ -27,7 +27,7 @@ let newGame = () => {
 let msgsTxt = []
 
 let buildTxtEntities = (x, y, txt) => {
-    console.log(txt)
+    // console.log(txt)
     let textSpc = 0
     return txt.split("").reverse().map(l => {
         let sprite = letters[l.toUpperCase()]
@@ -238,7 +238,7 @@ function startWebcam() {
                 .slice(0, 1)
                 // .filter(l => l.score > 10)
                 .forEach(line => {
-                    console.log(line.p, line.score)
+                    // console.log(line.p, line.score)
                     // if (line.score < 20) {
                     //     console.log('aqui')
                     //     do_nms = !do_nms

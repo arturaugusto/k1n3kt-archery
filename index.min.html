@@ -887,7 +887,6 @@ gs.showHighScore = false
 }
 let msgsTxt = []
 let buildTxtEntities = (x, y, txt) => {
-console.log(txt)
 let textSpc = 0
 return txt.split("").reverse().map(l => {
 let sprite = letters[l.toUpperCase()]
@@ -1039,7 +1038,6 @@ lines
 .sort((a, b) => b.p - a.p)
 .slice(0, 1)
 .forEach(line => {
-console.log(line.p, line.score)
 bowAngle = line.theta
 for (let x = 0; x < imageData.width-1; x+=0.02) {
 let theta = bowAngle
