@@ -3,6 +3,8 @@
 // where generated using ChatGPT with some minor modifications.
 // nms and houghLines where entirily written by Artur Augusto Martins
 
+// MIT License - Copyright 2023 Artur Augusto Martins
+
 // non-maximal supression of matrix or imageData
 function nms(image) {
     let nmsSize = 3;
@@ -83,7 +85,7 @@ function houghLines(imageData) {
     let poffset = Math.ceil(parameterSpacePMax/2)
     let precision = 45 // faster
     // let precision = 90
-    let parameterSpace = new Array(parameterSpacePMax).fill(0).map(_ => new Array(45).fill(0))
+    let parameterSpace = new Array(parameterSpacePMax).fill(0).map(_ => new Array(precision).fill(0))
 
     img.forEach((row, y) => {
         row.forEach((val, x) => {

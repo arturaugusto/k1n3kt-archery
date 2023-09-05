@@ -1,3 +1,7 @@
+// MIT License - Copyright 2023 Artur Augusto Martins
+
+// based on pixie font
+
 var letters = {
 'A': [
 [0,1,0],
